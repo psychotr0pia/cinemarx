@@ -17,5 +17,13 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 // Importa modelos a Sequelize
+db.admin = require("./admin.model.js")(sequelize,Sequelize);
+db.asiento = require("./asiento.model.js")(sequelize, Sequelize);
+db.cliente = require("./cliente.model.js")(sequelize,Sequelize);
+db.funciones= require("./funciones.model.js")(sequelize,Sequelize);
 db.pelicula = require("./pelicula.model.js")(sequelize, Sequelize);
+db.sala = require("./sala.model.js")(sequelize,Sequelize);
+db.tickets = require("./tickets.model.js")(sequelize, Sequelize);
+
+
 module.exports = db;
