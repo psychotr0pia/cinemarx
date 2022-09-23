@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 db.sequelize.sync({ force: true }).then(() => {
     console.log("Drop and re-sync db.");
 });
+require("./app/routes/admin.routes")(app);
 // Configurar puertos
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

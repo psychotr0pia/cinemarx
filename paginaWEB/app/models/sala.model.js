@@ -1,16 +1,16 @@
 module.exports = (sequelize, Sequelize) => {
-    const Salas = sequelize.define("sala", {
-      codigo_sala: {
-        type: Sequelize.INTEGRER,
+    const Salas = sequelize.define("SALA", {
+      CODIGO_SALA: {
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false
       },
-      disponibilidad: {
-        type: Sequelize.STRING,
+      DISPONIBILIDAD: {
+        type: Sequelize.STRING(100),
         allowNull:false
       },
-      cantidad_asiento:{
-        type: Sequelize.Integrer,
+      CANTIDAD_DE_ASIENTOS:{
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       tipo_sala: {
@@ -19,7 +19,7 @@ module.exports = (sequelize, Sequelize) => {
         allowNull:false
       },
       precio_sala:{
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         defaultValue: 3500,
         allowNull:false
       },

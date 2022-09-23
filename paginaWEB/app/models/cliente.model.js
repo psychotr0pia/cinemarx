@@ -1,24 +1,24 @@
 module.exports = (sequelize, Sequelize) => {
-    const Cliente = sequelize.define("cliente", {
-      rut: {
-        type: Sequelize.INTEGRER,
+    const Cliente = sequelize.define("CLIENTE", {
+      RUT: {
+        type: Sequelize.INTEGER,
         primarykey: true,
         allowNull:false
       },
-      id_ticket: {
-        type: Sequelize.INTEGRER,
+      ID_TICKET: {
+        type: Sequelize.INTEGER,
         allowNull:false
       },
-      nombre: {
-        type: Sequelize.STRING,
+      NOMBRE: {
+        type: Sequelize.STRING(100),
         allowNull:false
       },
-      apellido:{
-        type: Sequelize.STRING,
+      APELLIDO:{
+        type: Sequelize.STRING(100),
         allowNull:false
       },
-      edad:{
-        type: Sequelize.STRING,
+      EDAD:{
+        type: Sequelize.DATEONLY,
         allowNull:false
       }
 

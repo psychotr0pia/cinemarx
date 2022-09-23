@@ -1,40 +1,36 @@
 module.exports = (sequelize, Sequelize) => {
-    const Pelicula = sequelize.define("pelicula", {
-      id_pelicula: {
-        type: Sequelize.INTEGRER,
+    const Pelicula = sequelize.define("PELICULA", {
+      ID_PELICULA: {
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false
       },
-      id_catalogo: {//aqui deberia colocarla como FK
+      TITULO:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      titulo:{
+      DIRECTOR:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      director:{
-        type: Sequelize.STRING,
-        allowNull: false
-      },
-      duracion:{
+      DURACION:{
         type: Sequelize.TIME,
         allowNull: false
       },
-      restriccion:{
+      RESTRICCION:{
        type: Sequelize.BOOLEAN,
-       defaultValue: False,
+       defaultValue: 0,
        allowNull: false
       },
-      sinopsis:{
+      SINOPSIS:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      elenco:{
+      ELENCO:{
         type: Sequelize.STRING,
         allowNull: false,
       },
-      calificacion:{
+      CALIFICACION:{
         type: Sequelize.STRING,
         defaultValue: "Todo Publico",
         allowNull: false,
