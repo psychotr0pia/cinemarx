@@ -2,13 +2,13 @@ module.exports = app => {
 	const admin = require("../controllers/admin.controller.js");
 	var router = require("express").Router();
 	//Crear admin
-	router.create("/", admin.create);
+	router.post("/", admin.create);
 	//Buscar a todos los ADMINS (solo devuelve RUT)
-	router.findAll("/", admin.findAll)
+	router.get("/", admin.findAll)
 	//Actualizar password ADMIN
-	router.update("/:RUT", admin.update);
+	router.put("/:rut", admin.update);
 	//Eliminar ADMIN
-	router.delete("/:RUT", admin.delete);
+	router.delete("/:rut", admin.delete);
 	//agregar rutas al servidor
 	app.use('/api/admin', router);
 };

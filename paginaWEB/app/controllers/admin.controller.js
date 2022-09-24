@@ -14,8 +14,8 @@ if(!req.body.rut){
 }
 //Crear un nuevo Admin
 const admin = {
-	RUT: req.body.RUT,
-	PASSWORD: req.body.PASSWORD,
+	rut: req.body.rut,
+	password: req.body.password,
 };
 //Guardarlo en la base de datos
 Admin.create(admin).then(data => {
@@ -30,18 +30,18 @@ Admin.create(admin).then(data => {
 };
 //Buscar a todos los ADMINS (solo devuelve RUTs)
 exports.findAll = (req, res) => {
-	let admins = admins.findAll({
-		attributes: [
-			'RUT'
-		]
-	})
-	res.status(200).send(admins);
+	Admin.findAll({attributes: ['rut']})
+	.then(data =>{
+		res.status(200).send(data);
+	});
 };
 
 //Actualizar password ADMIN
 exports.update = (req, res) => {
-	const RUT = req.body.RUT;
-	Admin.update(req.body, {where: {RUT: RUT}})
+	const rut = req.body.rut;
+	console.log(rut)
+	console.log(req.body)
+	Admin.update(req.body, {where: {rut: rut}})
 	.then(num => {
         if (num == 1) {
             res.status(200).send({
@@ -62,8 +62,8 @@ exports.update = (req, res) => {
 };
 //Eliminar ADMIN
 exports.delete = (req, res) => {
-	const RUT = req.body.RUT;
-	Admin.destroy({where: {RUT: RUT}})
+	const rut = req.body.rut;
+	Admin.destroy({where: {rut: rut}})
 	.then(num => {
         if (num == 1) {
             res.status(200).send({

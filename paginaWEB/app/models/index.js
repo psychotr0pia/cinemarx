@@ -14,6 +14,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   }
 });
 //Validar coneccion a base de datos
+/*
 Sequelize.authenticate().
 then(() => {
   console.log("Conectado a base de datos")
@@ -21,6 +22,7 @@ then(() => {
 .catch(err => {
   console.log("Error"+error)
 })
+*/
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
