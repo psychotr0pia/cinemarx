@@ -14,18 +14,19 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
 });
 
-// en producción
-/*db.sequelize.sync()
+db.sequelize.sync()
     .then(() => {
         console.log("Synced db.");
     })
     .catch((err) => {
         console.log("Failed to sync db: " + err.message);
-    });*/
+    });
 // en desarrollo
+/*
 db.sequelize.sync({ force: true }).then(() => {
     console.log("Drop and re-sync db.");
 });
+*/
 require("./app/routes/admin.routes")(app);
 // Configurar puertos
 const PORT = process.env.PORT || 8080;
