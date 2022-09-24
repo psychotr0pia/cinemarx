@@ -21,17 +21,8 @@ db.sequelize.sync()
     .catch((err) => {
         console.log("Failed to sync db: " + err.message);
     });
-<<<<<<< HEAD
-
-=======
-// en desarrollo
-/*
-db.sequelize.sync({ force: true }).then(() => {
-    console.log("Drop and re-sync db.");
-});
-*/
+//Rutas 
 require("./app/routes/admin.routes")(app);
->>>>>>> 9e5c5b922a0eff8b9508f3153f0f234ef8778d57
 // Configurar puertos
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
