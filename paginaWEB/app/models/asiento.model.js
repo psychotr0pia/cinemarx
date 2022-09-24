@@ -1,25 +1,25 @@
 module.exports = (sequelize, Sequelize) => {
-    const Asiento = sequelize.define("asiento", {
-      codigo_asiento:{
-        type: Sequelize.INTEGRER,
+    const Asiento = sequelize.define("ASIENTO", {
+      CODIGO_ASIENTO:{
+        type: Sequelize.INTEGER,
         primaryKey: true,
         //falta poner el auto increment
         allowNull: false
       },
-      codigo_sala: { //fk
+      CODIGO_SALA: { //fk
         type: Sequelize.STRING,
         allowNull: false
       },
-      disponibilidad:{
+      DISPONIBILIDAD:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      fila: {
-        type: Sequelize.INTEGRER,
+      FILA: {
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false
       },
-      columna: {
+      COLUMNA: {
         type: Sequelize.STRING,
         allowNull: false
       }

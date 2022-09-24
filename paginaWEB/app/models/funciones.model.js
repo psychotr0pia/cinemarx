@@ -1,16 +1,16 @@
 module.exports = (sequelize, Sequelize) => {
-    const Funciones = sequelize.define("funcion", {
+    const Funciones = sequelize.define("FUNCION", {
       id_funciones: {
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false
       },
       rut: { //fk
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       id_pelicula: { //fk
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       codigo_sala:{ //fk

@@ -1,20 +1,20 @@
 module.exports = (sequelize, Sequelize) => {
-    const Tickets = sequelize.define("ticket", {
+    const Tickets = sequelize.define("TICKET", {
       id_tickets:{
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false
       },
       id_funciones: { //fk
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       codigo_asiento:{
-        type: Sequelize.INTEGRER, //AUTO_INCREMENT Y FK
+        type: Sequelize.INTEGER, //AUTO_INCREMENT Y FK
         allowNull: false
       },
       precio: {
-        type: Sequelize.INTEGRER,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       fecha_compra: {

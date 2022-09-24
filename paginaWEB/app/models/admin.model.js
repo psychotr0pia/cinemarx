@@ -1,12 +1,12 @@
 module.exports = (sequelize, Sequelize) => {
-    const Admin = sequelize.define("admin", {
-      Rut: {
-        type: Sequelize.INTEGRER,
+    const Admin = sequelize.define("ADMIN", {
+      RUT: {
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false
       },
-      password: {
-        type: Sequelize.STRING,
+      PASSWORD: {
+        type: Sequelize.STRING(100),
         allowNull: false
       }
     });
