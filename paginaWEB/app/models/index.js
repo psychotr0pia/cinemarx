@@ -19,7 +19,7 @@ then(() => {
   console.log("Conectado a base de datos")
 })
 .catch(err => {
-  console.log("Error"+error)
+  console.log("Error"+err)
 })
 const db = {};
 db.Sequelize = Sequelize;
