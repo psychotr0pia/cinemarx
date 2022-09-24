@@ -3,6 +3,7 @@ module.exports = (sequelize, Sequelize) => {
       ID_PELICULA: {
         type: Sequelize.INTEGER,
         primaryKey: true,
+        autoIncrement: true,
         allowNull: false
       },
       TITULO:{

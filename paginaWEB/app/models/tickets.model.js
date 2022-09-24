@@ -3,6 +3,7 @@ module.exports = (sequelize, Sequelize) => {
       id_tickets:{
         type: Sequelize.INTEGER,
         primaryKey: true,
+        autoIncrement: true,
         allowNull: false
       },
       id_funciones: { //fk
@@ -10,7 +11,7 @@ module.exports = (sequelize, Sequelize) => {
         allowNull: false
       },
       codigo_asiento:{
-        type: Sequelize.INTEGER, //AUTO_INCREMENT Y FK
+        type: Sequelize.INTEGER, //FK
         allowNull: false
       },
       precio: {

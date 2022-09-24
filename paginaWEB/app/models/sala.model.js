@@ -3,6 +3,7 @@ module.exports = (sequelize, Sequelize) => {
       CODIGO_SALA: {
         type: Sequelize.INTEGER,
         primaryKey: true,
+        autoIncrement: true,
         allowNull: false
       },
       DISPONIBILIDAD: {

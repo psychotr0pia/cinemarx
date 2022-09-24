@@ -5,7 +5,7 @@ module.exports = (sequelize, Sequelize) => {
         primarykey: true,
         allowNull:false
       },
-      ID_TICKET: {
+      ID_TICKET: { //fk
         type: Sequelize.INTEGER,
         allowNull:false
       },

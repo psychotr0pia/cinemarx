@@ -33,6 +33,10 @@ db.pelicula = require("./pelicula.model.js")(sequelize, Sequelize);
 db.sala = require("./sala.model.js")(sequelize,Sequelize);
 db.tickets = require("./tickets.model.js")(sequelize, Sequelize);
 
-
+//relaciones. Falta poner ON DELETE y ON UPDATE
+db.sala.hasMany(db.asiento, {
+  foreignKey: 'CODIGO_SALA'
+});
+db.asiento.belongsTo(db.sala);
 
 module.exports = db;

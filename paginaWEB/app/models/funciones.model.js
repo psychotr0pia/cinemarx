@@ -3,6 +3,7 @@ module.exports = (sequelize, Sequelize) => {
       id_funciones: {
         type: Sequelize.INTEGER,
         primaryKey: true,
+        autoIncrement: true,
         allowNull: false
       },
       rut: { //fk
