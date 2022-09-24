@@ -13,6 +13,14 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     idle: dbConfig.pool.idle
   }
 });
+//Validar coneccion a base de datos
+Sequelize.authenticate().
+then(() => {
+  console.log("Conectado a base de datos")
+})
+.catch(err => {
+  console.log("Error"+error)
+})
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
@@ -24,6 +32,7 @@ db.funciones= require("./funciones.model.js")(sequelize,Sequelize);
 db.pelicula = require("./pelicula.model.js")(sequelize, Sequelize);
 db.sala = require("./sala.model.js")(sequelize,Sequelize);
 db.tickets = require("./tickets.model.js")(sequelize, Sequelize);
+
 
 
 module.exports = db;
