@@ -107,5 +107,19 @@ exports.delete = (req, res) => {
         });
     });
 };
-//Eliminar a todos los admins
-
+//Eliminar todas las peliculas
+exports.deleteAll = (req, res) => {
+	Pelicula.destroy({
+		where: {},
+		truncate: false
+	}).
+		then(nums => {
+			res.status(200).send({message: '${nums} PELICULAS eliminadas!'});
+		})
+		.catch(err => {
+			res.status(500).send({
+				message:
+				err.message || "Error al eliminar todas las PELICULAS"
+			});
+		});
+};

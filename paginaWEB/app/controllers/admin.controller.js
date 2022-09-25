@@ -82,4 +82,19 @@ exports.delete = (req, res) => {
     });
 };
 //Eliminar a todos los admins
-
+exports.deleteAll = (req, res) => {
+        Admin.destroy({
+                where: {},
+                truncate: false
+        }).
+                then(nums => {
+                        res.status(200).send({message: '${nums} ADMINS eliminados!'});
+                })
+                .catch(err => {
+                        res.status(500).send({
+                                message:
+                                err.message || "Error al eliminar a todos los ADMINS"
+                        });
+                });
+};
+      
