@@ -23,6 +23,7 @@ db.sequelize.sync()
     });
 //Rutas 
 require("./app/routes/admin.routes")(app);
+require("./app/routes/pelicula.routes.js")(app);
 // Configurar puertos
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

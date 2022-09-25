@@ -1,37 +1,37 @@
 module.exports = (sequelize, Sequelize) => {
-    const Pelicula = sequelize.define("PELICULA", {
-      ID_PELICULA: {
+    const Pelicula = sequelize.define("pelicula", {
+      id_pelicula: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      TITULO:{
+      titulo:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      DIRECTOR:{
+      director:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      DURACION:{
-        type: Sequelize.TIME,
+      duracion:{
+        type: Sequelize.INTEGER, //duracion en segundos
         allowNull: false
       },
-      RESTRICCION:{
+      restriccion:{
        type: Sequelize.BOOLEAN,
        defaultValue: 0,
        allowNull: false
       },
-      SINOPSIS:{
+      sinopsis:{
         type: Sequelize.STRING,
         allowNull: false
       },
-      ELENCO:{
+      elenco:{
         type: Sequelize.STRING,
         allowNull: false,
       },
-      CALIFICACION:{
+      calificacion:{
         type: Sequelize.STRING,
         defaultValue: "Todo Publico",
         allowNull: false,
