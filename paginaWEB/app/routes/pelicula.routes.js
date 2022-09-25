@@ -12,5 +12,5 @@ module.exports = app => {
 	//Eliminar pelicula
 	router.delete("/:id_pelicula", pelicula.delete);
 	//agregar rutas al servidor
-	app.use('/api/admin', router);
+	app.use('/api/pelicula', router);
 };
