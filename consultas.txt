@@ -1,0 +1,24 @@
+crear admin
+en POST
+{
+	"rut": 1,
+	"password": "seguro"
+}
+
+{
+	"rut": 2,
+	"password": "muyseguro"
+}
+
+{
+	"rut": 3,
+	"password": "1234"
+}
+
+conseguir todos los admins
+en GET
+{}
+conseguir a un admin en especifico
+actualizar pswd de un admin
+eliminar a un admin
+eliminar a todos los admins
