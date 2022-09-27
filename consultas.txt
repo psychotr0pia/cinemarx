@@ -1,3 +1,4 @@
+http://localhost:8080/api/
 ADMINS
 crear admin
 en POST
@@ -18,18 +19,29 @@ en POST
 
 conseguir todos los admins
 en GET
+
 {}
-conseguir a un admin en especifico
 actualizar pswd de un admin
+api/admin/3
+{
+	"rut": 3,
+	"password": "extraseguro"
+}
 eliminar a un admin
+en DELETE
+api/admin/2
 eliminar a todos los admins
+en DELETE
+api/admin/
+{}
 
 PELICULAS
 crear pelicula
+api/pelicula/
 en POST
 {
-	"titulo": "Who killed Captain Alex?"
-	"director": "Nabwana I.G.G."
+	"titulo": "Who killed Captain Alex?",
+	"director": "Nabwana I.G.G.",
 	"duracion": 3800,
 	"restriccion": 0,
 	"sinopsis": "WHO KILLED CAPTAIN ALEX IS THE MOVIE MOVIE MOVIE MOVIE MOVIE ACTION IS COMING EXPECT THE UNEXPECTED",
@@ -37,8 +49,8 @@ en POST
 }
 
 {
-	"titulo": "BAD BLACK"
-	"director": "Nabwana I.G.G."
+	"titulo": "BAD BLACK",
+	"director": "Nabwana I.G.G.",
 	"duracion": 3900,
 	"restriccion": 0,
 	"sinopsis": "GHETTO RALLY WAKALIWOOD GHETTO RALLY SUBARU VROOM VROOM",
@@ -49,7 +61,7 @@ en POST
 	"titulo": "El limpiapiscinas",
 	"director": "Jose Luis Guridi",
 	"duracion": 3600,
-	restriccion 1,
+	"restriccion": 1,
 	"sinopsis": "limpiaban psicinas",
 	"elenco": "sebastian badilla como el prota"
 }
@@ -65,13 +77,10 @@ pelicula/1
 }
 actualizar pelicula
 en PUT
-pelicula/2
+pelicula/1
 {
-	"duracion": 3750
+	"restriccion:" 1
 }
 eliminar pelicula
 en DELETE
 {
-	"id_pelicula": 3
-}
-pelicula/3
