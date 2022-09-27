@@ -2,13 +2,9 @@ module.exports = (sequelize, Sequelize) => {
     const Asiento = sequelize.define("ASIENTO", {
       CODIGO_ASIENTO:{
         type: Sequelize.INTEGER,
-        //primaryKey: true,
+        primaryKey: true,
         autoIncrement: true,
         allowNull: false
-      },
-      CODIGO_SALA: { //fk
-        type: Sequelize.STRING,
-        allowNull: false,
       },
       DISPONIBILIDAD:{
         type: Sequelize.STRING,
@@ -16,7 +12,6 @@ module.exports = (sequelize, Sequelize) => {
       },
       FILA: {
         type: Sequelize.INTEGER,
-        primaryKey: true,
         allowNull: false
       },
       COLUMNA: {

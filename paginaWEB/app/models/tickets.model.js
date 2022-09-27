@@ -6,14 +6,6 @@ module.exports = (sequelize, Sequelize) => {
         autoIncrement: true,
         allowNull: false
       },
-      id_funciones: { //fk
-        type: Sequelize.INTEGER,
-        allowNull: false
-      },
-      codigo_asiento:{
-        type: Sequelize.INTEGER, //FK
-        allowNull: false
-      },
       precio: {
         type: Sequelize.INTEGER,
         allowNull: false
