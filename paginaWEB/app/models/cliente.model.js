@@ -2,11 +2,7 @@ module.exports = (sequelize, Sequelize) => {
     const Cliente = sequelize.define("CLIENTE", {
       RUT: {
         type: Sequelize.INTEGER,
-        primarykey: true,
-        allowNull:false
-      },
-      ID_TICKET: { //fk
-        type: Sequelize.INTEGER,
+        primaryKey: true,
         allowNull:false
       },
       NOMBRE: {
