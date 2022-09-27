@@ -1,3 +1,4 @@
+ADMINS
 crear admin
 en POST
 {
@@ -22,3 +23,55 @@ conseguir a un admin en especifico
 actualizar pswd de un admin
 eliminar a un admin
 eliminar a todos los admins
+
+PELICULAS
+crear pelicula
+en POST
+{
+	"titulo": "Who killed Captain Alex?"
+	"director": "Nabwana I.G.G."
+	"duracion": 3800,
+	"restriccion": 0,
+	"sinopsis": "WHO KILLED CAPTAIN ALEX IS THE MOVIE MOVIE MOVIE MOVIE MOVIE ACTION IS COMING EXPECT THE UNEXPECTED",
+	"elenco": "ALL OF UGANDA. EVERYONE FROM UGANDA KNOWS KUNG FU" 
+}
+
+{
+	"titulo": "BAD BLACK"
+	"director": "Nabwana I.G.G."
+	"duracion": 3900,
+	"restriccion": 0,
+	"sinopsis": "GHETTO RALLY WAKALIWOOD GHETTO RALLY SUBARU VROOM VROOM",
+	"elenco": "UGANDA" 
+}
+
+{
+	"titulo": "El limpiapiscinas",
+	"director": "Jose Luis Guridi",
+	"duracion": 3600,
+	restriccion 1,
+	"sinopsis": "limpiaban psicinas",
+	"elenco": "sebastian badilla como el prota"
+}
+
+conseguir todas las peliculas
+en GET
+{}
+conseguir una pelicula en especifico
+en GET
+pelicula/1
+{
+	"id_pelicula": 1
+}
+actualizar pelicula
+en PUT
+pelicula/2
+{
+	"duracion": 3750
+}
+eliminar pelicula
+en DELETE
+{
+	"id_pelicula": 3
+}
+pelicula/3
