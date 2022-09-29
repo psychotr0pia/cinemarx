@@ -14,10 +14,10 @@ if(!req.body){
 }
 //Crear una nueva sala
 const sala = {
-	disponibilidad: req.body.disponibilidad,
-    	cantidad_de_asientos: req.body.cantidad_de_asientos,
+	    DISPONIBILIDAD: req.body.disponibilidad,
+        CANTIDAD_DE_ASIENTOS: req.body.cantidad_de_asientos,
     	tipo_sala: req.body.tipo_sala,
-	precio_sala: req.body.precio_sala;
+	    precio_sala: req.body.precio_sala
 };
 //Guardarlo en la base de datos
 Sala.create(sala).then(data => {

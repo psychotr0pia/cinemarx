@@ -14,5 +14,5 @@ module.exports = app => {
 	//Eliminar todas las funciones
 	router.delete("/", funciones.deleteAll);
 	//agregar rutas al servidor
-	app.use('/api/admin', router);
+	app.use('/api/funciones', router);
 };
