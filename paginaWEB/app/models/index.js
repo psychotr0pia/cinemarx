@@ -51,6 +51,8 @@ db.pelicula.hasMany(db.funciones, {
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
+db.funciones.belongsTo(db.pelicula, {foreignKey: "id_pelicula"});
+
 
 //admin a funciones 1 a 1
 db.admin.hasOne(db.funciones, {
