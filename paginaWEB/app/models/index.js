@@ -61,14 +61,17 @@ db.admin.hasOne(db.funciones, {
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
+db.funciones.belongsTo(db.admin,{foreignKey: "rut"});
+
 
 //funciones a salas n a 1 
 db.sala.hasMany(db.funciones, {
   foreignKey: {
-    name: 'codigo_sala', type: Sequelize.INTEGER, allowNull: false
+    name: 'CODIGO_SALA', type: Sequelize.INTEGER, allowNull: false
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
+db.funciones.belongsTo(db.sala, {foreignKey: "CODIGO_SALA"});
 
 
 //Asiento a sala 1 a n
@@ -78,6 +81,7 @@ db.sala.hasMany(db.asiento, {
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
+db.asiento.belongsTo(db.sala,{foreignKey: "codigo_sala"});
 
 //tickets a asiento 1 a n
 db.asiento.hasOne(db.tickets, {
@@ -86,6 +90,7 @@ db.asiento.hasOne(db.tickets, {
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
+db.tickets.belongsTo(db.asiento, {foreignKey: "codigo_asiento"});
 
 //tickets a funciones 1 a n
 db.funciones.hasMany(db.tickets, {
@@ -94,7 +99,7 @@ db.funciones.hasMany(db.tickets, {
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
-
+db.tickets.belongsTo(db.funciones,{foreignKey: "id_funciones"})
 
 
 //tickets a clientes 1 a n
@@ -105,6 +110,7 @@ db.tickets.hasMany(db.cliente, {
   },
   onDelete: "CASCADE", onUpdate: "CASCADE"
 });
+db.cliente.belongsTo(db.tickets,{foreignKey: "id_tickets"})
 
 
 module.exports = db;

@@ -17,7 +17,7 @@ exports.create = (req, res) => {
         rut: req.body.rut,
         horario: req.body.horario,
         id_pelicula: req.body.id_pelicula,
-        codigo_sala: req.body.codigo_sala
+        CODIGO_SALA: req.body.codigo_sala
     };
     //Guardarlo en la base de datos
     Funciones.create(funciones).then(data => {
@@ -32,16 +32,43 @@ exports.create = (req, res) => {
 };
 //Buscar todas las funciones 
 exports.findAll = (req, res) => {
-    Funciones.findAll({ include: {model : db.pelicula} })
-        .then(data => {
-            res.status(200).send(data);
-        });
+    if (req.body.join) {
+        Funciones.findAll({ include: [{ model: db.pelicula} ,{model: db.sala} ]})
+            .then(data => {
+                res.status(200).send(data);
+            });
+    }
+    else {
+        Funciones.findAll()
+            .then(data => {
+                res.status(200).send(data);
+            });
+    }
+
 };
 
 //Buscar una funcion por PK
 exports.findOne = (req, res) => {
     const id_funciones = req.params.id_funciones;
-    Funciones.findByPk(id_funciones)
+    if (req.body.join) {//aqui busca con el join
+        Funciones.findByPk(id_funciones,{ include: [{ model: db.pelicula} ,{model: db.sala} ]})
+            .then(data => {
+                if (data) {
+                    res.send(data);
+                } else {
+                    res.status(404).send({
+                        message: `No se encontró la funcion.`
+                    });
+                }
+            })
+            .catch(err => {
+                res.status(500).send({
+                    message: "Error en la búsqueda"
+                });
+            });
+    }
+    else {
+        Funciones.findByPk(id_funciones,{ include: [{ model: db.pelicula} ,{model: db.sala} ]})//aqui busca sin el join
         .then(data => {
             if (data) {
                 res.send(data);
@@ -56,6 +83,7 @@ exports.findOne = (req, res) => {
                 message: "Error en la búsqueda"
             });
         });
+    }
 
 };
 //Actualizar horario funcion
