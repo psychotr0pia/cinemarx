@@ -27,7 +27,7 @@ exports.create = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Error al crear un nuevo ADMIN"
+                    err.message || "Error al crear un nuevo ASIENTO"
             });
         });
 };

@@ -12,9 +12,9 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // Import other React Component
-import CreateClient from "./Components/create-client.component";
-import EditClient from "./Components/edit-client.component";
-import ClientList from "./Components/client-list.component";
+import CreateAdmin from "./Components/create-admin.component";
+import EditAdmin from "./Components/edit-admin.component";
+import AdminList from "./Components/admin-list.component";
 
 // App Component
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
           <Navbar bg="dark" variant="dark">
             <Container>
               <Navbar.Brand>
-                <Link to={"/create-client"} 
+                <Link to={"/create-admin"} 
                   className="nav-link">
                   React App
                 </Link>
@@ -33,16 +33,16 @@ const App = () => {
   
               <Nav className="justify-content-end">
                 <Nav>
-                  <Link to={"/create-client"} 
+                  <Link to={"/create-admin"} 
                     className="nav-link">
-                    Create Client
+                    Create Admin
                   </Link>
                 </Nav>
   
                 <Nav>
-                  <Link to={"/client-list"} 
+                  <Link to={"/admin-list"} 
                     className="nav-link">
-                    Client List
+                    Admin List
                   </Link>
                 </Nav>
               </Nav>
@@ -55,10 +55,10 @@ const App = () => {
             <Col md={12}>
               <div className="wrapper">
                 <Switch>
-                  <Route exact path="/" component={ClientList} />
-                  <Route path="/create-client" component={CreateClient} />
-                  <Route path="/edit-client/:id" component={EditClient} />
-                  <Route path="/client-list" component={ClientList} />
+                  <Route exact path="/" component={AdminList} />
+                  <Route path="/create-admin" component={CreateAdmin} />
+                  <Route path="/edit-admin/:rut" component={EditAdmin} />
+                  <Route path="/admin-list" component={AdminList} />
                 </Switch>
               </div>
             </Col>
