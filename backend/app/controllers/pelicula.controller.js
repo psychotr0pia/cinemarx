@@ -6,7 +6,9 @@ const Pelicula = db.pelicula;
 const Op = db.Sequelize.Op;
 //Si el query esta vacio
 exports.create = (req, res) => {
+console.log(req.body);
 if(!req.body){
+	console.log("uwu")
 	res.status(400).send({
 		message: "El contenido no puede estar vacio"
 	});
@@ -64,7 +66,7 @@ exports.findOne = (req,res) => {
 };
 //Actualizar datos pelicula
 exports.update = (req, res) => {
-	const id_pelicula = req.body.id_pelicula;
+	const id_pelicula = req.params.id_pelicula;
 	//console.log(rut)
 	//console.log(req.body)
 	Pelicula.update(req.body, {where: {id_pelicula: id_pelicula}})
