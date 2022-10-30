@@ -88,7 +88,7 @@ exports.update = (req, res) => {
 };
 //Eliminar PELICULA
 exports.delete = (req, res) => {
-	const id_pelicula = req.body.id_pelicula;
+	const id_pelicula = req.params.id_pelicula;
 	Pelicula.destroy({where: {id_pelicula: id_pelicula}})
 	.then(num => {
         if (num == 1) {
