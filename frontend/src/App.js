@@ -15,7 +15,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateAdmin from "./Components/create-admin.component";
 import EditAdmin from "./Components/edit-admin.component";
 import AdminList from "./Components/admin-list.component";
-
+import CreatePelicula from "./Components/create-pelicula.component"
+// import EditPelicula from "./Components/edit-pelicula.component"
+import PeliculaList from "./Components/pelicula-list.component"
 // App Component
 const App = () => {
   return (
@@ -25,7 +27,7 @@ const App = () => {
           <Navbar bg="dark" variant="dark">
             <Container>
               <Navbar.Brand>
-                <Link to={"/create-admin"} 
+                <Link to={"/admin-list"} 
                   className="nav-link">
                   React App
                 </Link>
@@ -45,6 +47,21 @@ const App = () => {
                     Admin List
                   </Link>
                 </Nav>
+
+	  	<Nav>
+	  	  <Link to={"/create-pelicula"}
+	  	    className="nav-link">
+	  	    Create pelicula
+	  	  </Link>
+		</Nav>
+	  	
+	  	<Nav>
+                  <Link to={"/pelicula-list"}
+                    className="nav-link">
+                    Pelicula List
+                  </Link>
+                </Nav>
+
               </Nav>
             </Container>
           </Navbar>
@@ -59,6 +76,8 @@ const App = () => {
                   <Route path="/create-admin" component={CreateAdmin} />
                   <Route path="/edit-admin/:rut" component={EditAdmin} />
                   <Route path="/admin-list" component={AdminList} />
+	  	  <Route path="/create-pelicula" component={CreatePelicula} />
+           	  <Route path="/pelicula-list" component={PeliculaList} />
                 </Switch>
               </div>
             </Col>
