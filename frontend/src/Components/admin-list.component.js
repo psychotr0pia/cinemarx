@@ -4,6 +4,7 @@ import { Table } from "react-bootstrap";
 import AdminTableRow from "./AdminTableRow";
   
 const AdminList = () => {
+  console.log("uwu!");
   const [admin, setAdmin] = useState([]);
   
   useEffect(() => {
