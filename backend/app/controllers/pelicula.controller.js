@@ -6,7 +6,6 @@ const Pelicula = db.pelicula;
 const Op = db.Sequelize.Op;
 //Si el query esta vacio
 exports.create = (req, res) => {
-console.log(req.body);
 if(!req.body){
 	console.log("uwu")
 	res.status(400).send({
