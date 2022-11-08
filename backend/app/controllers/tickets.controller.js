@@ -68,7 +68,7 @@ exports.findOne = (req,res) => {
 
 //Actualizar datos sala
 exports.update = (req, res) => {
-	const id_tickets = req.params.id_tickets;
+	const id_tickets = req.params.codigo_tickets;
 	Tickets.update(req.body, {where: {id_tickets: id_tickets}})
 	.then(num => {
         if (num == 1) {
@@ -92,8 +92,8 @@ exports.update = (req, res) => {
 
 //Eliminar sala
 exports.delete = (req, res) => {
-	const codigo_tickets = req.params.codigo_tickets;
-	Tickets.destroy({where: {codigo_tickets : codigo_tickets}})
+	const id_tickets = req.params.codigo_tickets;
+	Tickets.destroy({where: {id_tickets : id_tickets}})
 	.then(num => {
         if (num == 1) {
             res.status(200).send({
