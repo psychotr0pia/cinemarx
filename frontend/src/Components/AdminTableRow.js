@@ -25,11 +25,11 @@ const AdminTableRow = (props) => {
       <td>
         <Link className="edit-link" 
           to={"/edit-admin/" + rut}>
-          Edit
+          Editar
         </Link>
         <Button onClick={deleteAdmin} 
           size="sm" variant="danger">
-          Delete
+          Eliminar
         </Button>
       </td>
     </tr>

@@ -2,6 +2,7 @@ import React from "react";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { FormGroup, FormControl, Button } from "react-bootstrap";
+import { Navbarr } from "../navbar/navbar";
   
 const AdminForm = (props) => {
   const validationSchema = Yup.object().shape({
@@ -9,37 +10,38 @@ const AdminForm = (props) => {
     password: Yup.string().required("Required"),
   });
   return (
+    <><Navbarr/>
     <div className="form-wrapper">
-      <Formik {...props} validationSchema={validationSchema}>
-        <Form>
-          <FormGroup>
-            <h1>Administrador</h1>
-            <>Rut</>
-            <Field name="rut" type="text" 
-                className="form-control" />
-            <ErrorMessage
-              name="rut"
-              className="d-block invalid-feedback"
-              component="span"
-            />
-          </FormGroup>
-          <FormGroup>
-            <>Password</>
-            <Field name="password" type="text" 
-                className="form-control" />
-            <ErrorMessage
-              name="password"
-              className="d-block invalid-feedback"
-              component="span"
-            />
-          </FormGroup>
-          <Button variant="danger" size="lg" 
-            block="block" type="submit">
-            {props.children}
-          </Button>
-        </Form>
-      </Formik>
-    </div>
+    <Formik {...props} validationSchema={validationSchema}>
+      <Form>
+        <FormGroup>
+          <h1 className="TituloList">Administrador</h1>
+          <>Rut</>
+          <Field name="rut" type="text" 
+              className="form-control" />
+          <ErrorMessage
+            name="rut"
+            className="d-block invalid-feedback"
+            component="span"
+          />
+        </FormGroup>
+        <FormGroup>
+          <>Contraseña</>
+          <Field name="password" type="text" 
+              className="form-control" />
+          <ErrorMessage
+            name="password"
+            className="d-block invalid-feedback"
+            component="span"
+          />
+        </FormGroup>
+        <Button variant="danger" size="lg" 
+          block="block" type="submit">
+          {props.children}
+        </Button>
+      </Form>
+    </Formik>
+  </div></>
   );
 };
   

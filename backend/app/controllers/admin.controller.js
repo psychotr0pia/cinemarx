@@ -14,9 +14,14 @@ if(!req.body.rut){
 }
 //Crear un nuevo Admin
 const admin = {
-	rut: req.body.rut,
-	password: req.body.password,
+    rut: req.body.rut,
+    password: req.body.password,
 };
+if ((admin.password).length < 4) {
+    return res.status(400).json({
+        message: "La contraseña no puede tener un largo menor a 4"
+    });
+}
 //Guardarlo en la base de datos
 Admin.create(admin).then(data => {
 	res.status(200).send(data);

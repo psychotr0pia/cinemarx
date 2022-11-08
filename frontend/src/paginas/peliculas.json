@@ -1,0 +1,73 @@
+[
+    {
+        "titulo": "Raya and the Last Dragon",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg"
+    },
+    {
+        "titulo": "Sentinelle",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/fFRq98cW9lTo6di2o4lK1qUAWaN.jpg"
+    },
+    {
+        "titulo": "Zack Snyder's Justice League",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg"
+    },
+    {
+
+        "titulo": "no se que poner",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/6KErczPBROQty7QoIsaa6wJYXZi.jpg"
+    },
+    {
+        "titulo": "no se que poner 2",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/1UCOF11QCw8kcqvce8LKOO6pimh.jpg"
+    },
+    {
+        "titulo": "no se que poner 3",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/dWSnsAGTfc8U27bWsy2RfwZs0Bs.jpg"
+    },
+    {
+        "titulo": "no se que poner 4",
+        "director":"asdad",
+        "duracion":103,
+        "restriccion":false,
+        "sinopsis":"asdasdasad",
+        "elenco":"asdasdsad",
+        "calificacion":"asdasdasd",
+        "urlimagen": "/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
+    }
+]
