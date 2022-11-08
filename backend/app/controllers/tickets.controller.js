@@ -92,8 +92,8 @@ exports.update = (req, res) => {
 
 //Eliminar sala
 exports.delete = (req, res) => {
-	const id_tickets = req.params.id_tickets;
-	Tickets.destroy({where: {id_tickets : id_tickets}})
+	const codigo_tickets = req.params.codigo_tickets;
+	Tickets.destroy({where: {codigo_tickets : codigo_tickets}})
 	.then(num => {
         if (num == 1) {
             res.status(200).send({
