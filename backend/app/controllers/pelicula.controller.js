@@ -21,7 +21,8 @@ const pelicula = {
     restriccion: req.body.restriccion,
     sinopsis: req.body.sinopsis,
     elenco: req.body.elenco,
-    calificacion: req.body.calificacion
+    calificacion: req.body.calificacion,
+    urlimagen: req.body.urlimagen
 
 };
 //Guardarlo en la base de datos

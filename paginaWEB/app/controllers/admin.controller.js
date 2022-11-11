@@ -19,7 +19,7 @@ exports.create = async (req, res) => {
     };
      if ((admin.password).length < 4) {
         res.status(400).send({
-            message: "La contraseña no puede tener un largo menor a 4"
+            message:  "La contraseña no puede tener un largo menor a 4"
         });
         return;
     }
@@ -28,7 +28,7 @@ exports.create = async (req, res) => {
         res.status(200).send(data);
     })
         .catch(err => {
-            res.status(500).send({
+            res.status(400).send({
                 message:
                     err.message || "Error al crear un nuevo ADMIN"
             });

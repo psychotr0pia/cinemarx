@@ -1,5 +1,6 @@
 // Import Modules
 import React, { useState, useEffect } from "react";
+import { Navbarr } from "../navbar/navbar";
 import AdminService from "../Services/admin.service";
 import AdminForm from "./AdminForm";
 
@@ -34,13 +35,14 @@ const EditAdmin = (props) => {
   
   // Return Admin form
   return (
+    <>
     <AdminForm
-      initialValues={formValues}
-      onSubmit={onSubmit}
-      enableReinitialize
-    >
-      Update Admin
-    </AdminForm>
+    initialValues={formValues}
+    onSubmit={onSubmit}
+    enableReinitialize>
+    Modificar Admin
+  </AdminForm></>
+   
   );
 };
   

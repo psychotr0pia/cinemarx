@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PeliculaService from "../Services/pelicula.service";
   
 const PeliculaTableRow = (props) => {
-  const {id_pelicula, titulo, director, duracion, restriccion, sinopsis, elenco, calificacion } = props.obj;
+  const {id_pelicula, titulo, director, duracion, restriccion, sinopsis, elenco, calificacion  } = props.obj;
   
   const deletePelicula = () => {
     PeliculaService.remove(id_pelicula)
@@ -30,10 +30,7 @@ const PeliculaTableRow = (props) => {
       <td>{elenco}</td>
       <td>{calificacion}</td>
       <td>
-        <Link className="edit-link" 
-          to={"/edit-pelicula/" + id_pelicula}>
-          Edit
-        </Link>
+ 
         <Button onClick={deletePelicula} 
           size="sm" variant="danger">
           Delete
@@ -44,3 +41,7 @@ const PeliculaTableRow = (props) => {
 };
   
 export default PeliculaTableRow;
+/*       <Link className="edit-link" 
+to={"/edit-pelicula/" + id_pelicula}>
+Edit
+</Link>*/

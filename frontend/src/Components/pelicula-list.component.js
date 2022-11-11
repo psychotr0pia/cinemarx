@@ -3,13 +3,17 @@ import PeliculaDataService from "../Services/pelicula.service";
 import { Table, Button, Row, Col} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import PeliculaTableRow from "./PeliculaTableRow";
+import { Navbarr } from "../navbar/navbar";
   
 const PeliculaList = () => {
   const [pelicula, setPelicula] = useState([]);
   
   useEffect(() => {
+    console.log("TEST 1")
     PeliculaDataService.getAll()
       .then(({ data }) => {
+        console.log("TEST 2",data)
+
         setPelicula(data);
       })
       .catch((error) => {
@@ -19,22 +23,17 @@ const PeliculaList = () => {
   
   const DataTable = () => {
     return pelicula.map((res, i) => {
+      console.log("TEST 3",res)
       return <PeliculaTableRow obj={res} key={i} />;
     });
   };
   
   return (
+    <><Navbarr/>
     <div className="table-wrapper">
       <Row>
-        <Col>
-          <h2>Pelicula list</h2>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Link to={"/create-pelicula/"}>
-            <Button>Create pelicula</Button>
-          </Link>
+        <Col className="TituloList">
+          <h2>Lista Peliculas</h2>
         </Col>
       </Row>
       <Row>
@@ -46,17 +45,17 @@ const PeliculaList = () => {
                 <th>Titulo</th>
                 <th>Director</th>
                 <th>Duracion</th>
-	  	<th>Restriccion</th>
-	  	<th>Sinopsis</th>
-	        <th>Elenco</th>
-	  	<th>Calificacion</th>
+	  	          <th>Restriccion</th>
+	  	          <th>Sinopsis</th>
+	              <th>Elenco</th>
+	  	          <th>Calificacion</th>
               </tr>
             </thead>
             <tbody>{DataTable()}</tbody>
           </Table>
         </Col>
       </Row>
-    </div>
+    </div></>
   );
 };
   

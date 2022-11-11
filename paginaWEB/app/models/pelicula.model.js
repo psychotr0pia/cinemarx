@@ -35,6 +35,11 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         defaultValue: "Todo Publico",
         allowNull: false,
+      },
+      urlimagen:{
+        type: Sequelize.STRING,
+        defaultValue: "https://image.shutterstock/.com/image-vector/placeholder-icon-vector-isolated-on-260nw-1144039568.jpg",
+        allowNull: false,
       }
     }
     );

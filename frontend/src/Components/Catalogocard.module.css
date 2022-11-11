@@ -1,0 +1,11 @@
+.catalogopelicula{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.catalogopelicula:hover{
+    opacity: 0.8;
+}
+.peliculaImagen{
+    border-radius: 10px;
+    background-color: azure;
+}

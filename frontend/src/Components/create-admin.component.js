@@ -13,7 +13,8 @@ const CreateAdmin = () => {
         else
           Promise.reject()
       })
-      .catch(err => alert('Something went wrong'))
+      .catch(err => alert(err.response.data.message))
+      
   }
     
   // Return admin form
@@ -21,7 +22,7 @@ const CreateAdmin = () => {
     <AdminForm initialValues={formValues} 
       onSubmit={onSubmit} 
       enableReinitialize>
-      Create admin
+      Crear admin
     </AdminForm>
   )
 }
