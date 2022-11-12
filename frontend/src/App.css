@@ -16,11 +16,9 @@ body h3 {
   margin: 0 auto;
 }
 
-.table-wrapper thead{
-  color: black;
-}
 .TituloList{
   text-align: center;
+  padding: 1%;
 }
 .table-wrapper {
   max-width: 700px;

@@ -1,5 +1,6 @@
 // Import Modules
-import React, { useState, useEffect } from "react";
+import React, { useState, /*useEffect*/ } from "react";
+import { Navbarr } from "../navbar/navbar";
 import AdminService from "../Services/admin.service";
 import AdminForm from "./AdminForm";
   
@@ -19,11 +20,14 @@ const CreateAdmin = () => {
     
   // Return admin form
   return(
+    <>
+    <Navbarr/>
     <AdminForm initialValues={formValues} 
       onSubmit={onSubmit} 
       enableReinitialize>
-      Crear admin
+      Crear
     </AdminForm>
+    </>
   )
 }
   

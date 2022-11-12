@@ -27,8 +27,7 @@ const App = () => {
         to={"/Create-admin/"}>
         Admin
       </Link>
-      <Link to="/">
-        <h1 className={style.Titulo}>Catalogo</h1></Link>
+        <h1 className={style.Titulo}>Catalogo</h1>
       <Movies />
     </div>
   );

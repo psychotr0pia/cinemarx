@@ -1,11 +1,16 @@
 .DetallesContainer{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
 }
 .Titulo{
     text-align: center;
     font-size: 3rem;
+    padding: 1%;
 }
 a{
     text-decoration: none;
     color: black;
 }
+

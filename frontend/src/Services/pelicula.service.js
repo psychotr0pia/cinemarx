@@ -9,9 +9,7 @@ const get = id_pelicula => {
 };
 
 const create = data => {
-  console.log(data);
-  return http.post("/pelicula", data);
-
+  return http.post(`/pelicula`, data);
 };
 
 const update = (id_pelicula, data) => {
