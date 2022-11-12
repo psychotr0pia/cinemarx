@@ -1,8 +1,7 @@
 import React from "react";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { FormGroup, FormControl, Button } from "react-bootstrap";
-import { Navbarr } from "../navbar/navbar";
+import { FormGroup /*FormControl*/, Button } from "react-bootstrap";
   
 const AdminForm = (props) => {
   const validationSchema = Yup.object().shape({
@@ -10,7 +9,7 @@ const AdminForm = (props) => {
     password: Yup.string().required("Required"),
   });
   return (
-    <><Navbarr/>
+    <>
     <div className="form-wrapper">
     <Formik {...props} validationSchema={validationSchema}>
       <Form>

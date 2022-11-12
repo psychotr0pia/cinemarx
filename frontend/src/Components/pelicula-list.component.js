@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PeliculaDataService from "../Services/pelicula.service";
-import { Table, Button, Row, Col} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Table, /*Button*/ Row, Col} from "react-bootstrap";
+//import { Link } from "react-router-dom";
 import PeliculaTableRow from "./PeliculaTableRow";
 import { Navbarr } from "../navbar/navbar";
   

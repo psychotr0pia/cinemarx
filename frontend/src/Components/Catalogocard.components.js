@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./Catalogocard.module.css";
-import axios from "../Services/http-common.js";
+
 export function Catalogocard({ pelicula }) {
     console.log(pelicula)
-    const urlimagen = "https://image.tmdb.org/t/p/w300" + pelicula.urlimagen;
+    const urlimagen = "https://image.tmdb.org/t/p/w200" + pelicula.urlimagen;
 
     return <li className={styles.catalogopelicula}>
-        <Link to={"/descripcion/" + pelicula.titulo}>
+        <Link to={"/descripcion/" + pelicula.id_pelicula}>
             <img width={230}
                 height={345}
                 className={styles.peliculaImagen}

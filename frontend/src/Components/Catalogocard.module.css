@@ -1,11 +1,32 @@
-.catalogopelicula{
+.catalogopelicula {
     list-style: none;
     font-size: 1.5rem;
+    float: left;
 }
-.catalogopelicula:hover{
+
+.catalogopelicula1:hover {
     opacity: 0.8;
 }
-.peliculaImagen{
+
+.peliculaImagen1 {
     border-radius: 10px;
     background-color: azure;
+}
+
+.peliculaImagen2 {
+    border-radius: 10px;
+    background-color: azure;
+    float: left;
+}
+
+.descripcion {
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black; 
+    max-width: 400px;
+    
+    
 }
