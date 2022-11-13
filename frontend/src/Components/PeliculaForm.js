@@ -1,7 +1,7 @@
 import React from "react";
 import * as Yup from "yup";
-import { Formik, Field, ErrorMessage} from "formik";
-import { FormGroup, Button, Form} from "react-bootstrap";
+import { Formik, Form,Field, ErrorMessage} from "formik";
+import { FormGroup, Button, /*Form*/} from "react-bootstrap";
 
 const PeliculaForm = (props) => {
   const validationSchema = Yup.object().shape({
@@ -20,6 +20,7 @@ const PeliculaForm = (props) => {
       <Formik {...props} validationSchema={validationSchema}>
         <Form>
           <FormGroup>
+            <h1 className="TituloList">Crear Pelicula</h1>
             <>Titulo</>
             <Field name="titulo" type="text"
               className="form-control" />

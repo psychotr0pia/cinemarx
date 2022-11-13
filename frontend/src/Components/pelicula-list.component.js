@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PeliculaDataService from "../Services/pelicula.service";
-import { Table, /*Button*/ Row, Col} from "react-bootstrap";
+import { Table, Col} from "react-bootstrap";
 //import { Link } from "react-router-dom";
 import PeliculaTableRow from "./PeliculaTableRow";
 import { Navbarr } from "../navbar/navbar";
@@ -31,13 +31,10 @@ const PeliculaList = () => {
   return (
     <><Navbarr/>
     <div className="table-wrapper">
-      <Row>
+
         <Col className="TituloList">
           <h2>Lista Peliculas</h2>
         </Col>
-      </Row>
-      <Row>
-        <Col>
           <Table striped bordered hover>
             <thead>
               <tr>
@@ -53,9 +50,7 @@ const PeliculaList = () => {
             </thead>
             <tbody>{DataTable()}</tbody>
           </Table>
-        </Col>
-      </Row>
-    </div></>
+        </div></>
   );
 };
   

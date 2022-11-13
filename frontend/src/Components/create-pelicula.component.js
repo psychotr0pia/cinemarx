@@ -1,6 +1,6 @@
 // Import Modules
-import React, { useState, useEffect } from "react";
-import { Col } from "react-bootstrap";
+import React, { useState, /*useEffect */} from "react";
+//import { Col } from "react-bootstrap";
 import { Navbarr } from "../navbar/navbar";
 import PeliculaService from "../Services/pelicula.service";
 import PeliculaForm from "./PeliculaForm";
@@ -17,16 +17,14 @@ const CreatePelicula = () => {
         else
           Promise.reject()
       })
-      .catch(err => alert('Something went wrong'))
+      .catch(err => alert(err.response.data.message))
+
   }
 
   // Return pelicula form
   return(
     <>
       <Navbarr/>
-      <Col className="TituloList">
-        <h2>Crear Pelicula</h2>
-      </Col>
       <PeliculaForm initialValues={formValues}
         onSubmit={onSubmit}
         enableReinitialize>
