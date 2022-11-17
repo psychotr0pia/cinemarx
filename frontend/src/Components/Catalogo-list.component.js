@@ -1,8 +1,9 @@
 import {Catalogocard} from "./Catalogocard.components";
-import pelis from "./pelis.json";
+//import pelis from "./pelis.json";
 import styles from "./catalogolist.module.css";
-import axios from "../Services/http-common.js";
+//import axios from "../Services/http-common.js";
 import { useEffect, useState } from "react";
+import PeliculaService from "../Services/pelicula.service";
 //import PeliculaService from "../Services/pelicula.service";
 
 export function Movies(){
@@ -11,7 +12,7 @@ export function Movies(){
 
 
     useEffect(()=>{
-        axios.get('/pelicula')
+        PeliculaService.getAll('/pelicula')
         .then((res)=>{
             setpeliculas(res?.data || []);
             if(!res.data){

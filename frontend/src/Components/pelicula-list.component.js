@@ -9,21 +9,15 @@ const PeliculaList = () => {
   const [pelicula, setPelicula] = useState([]);
   
   useEffect(() => {
-    console.log("TEST 1")
     PeliculaDataService.getAll()
       .then(({ data }) => {
-        console.log("TEST 2",data)
-
         setPelicula(data);
       })
       .catch((error) => {
-        console.log(error);
       });
   }, []);
-  
   const DataTable = () => {
     return pelicula.map((res, i) => {
-      console.log("TEST 3",res)
       return <PeliculaTableRow obj={res} key={i} />;
     });
   };

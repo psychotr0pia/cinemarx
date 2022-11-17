@@ -1,4 +1,4 @@
-import { Nav, Navbar, Container, Row, Col } from "react-bootstrap";
+import { Nav, Navbar, Container} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import React from 'react'
 import { Link } from "react-router-dom";
@@ -47,3 +47,10 @@ export const Navbarr = () => {
         </header>
     )
 }
+/*<Nav>
+                            <Link to={"/funciones-list"}
+                                className="nav-link">
+                                Lista Funciones
+                            </Link>
+                        </Nav>
+                        */

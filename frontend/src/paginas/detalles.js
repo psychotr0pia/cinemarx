@@ -38,7 +38,7 @@ export function DetallesHola(props) {
                         <ul>Director: {peliculas.director}</ul>
                         <ul>Elenco: {peliculas.elenco}</ul>
                         <ul>Restriccion: {peliculas.restriccion}</ul>
-                        <ul>Duracion: {peliculas.duracion}</ul>
+                        <ul>Duracion: {peliculas.duracion} min </ul>
                         <ul>Sinopsis: {peliculas.sinopsis}</ul>
                     </li>
                 </div>

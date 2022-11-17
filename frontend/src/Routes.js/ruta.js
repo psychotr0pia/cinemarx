@@ -8,6 +8,7 @@ import AdminList from "../Components/admin-list.component";
 import CreatePelicula from "../Components/create-pelicula.component";
 import Catalogo from "../Components/Catalogo.component";
 import App from "../App";
+import { Funciones } from "../Components/Funciones-list.component";
 
 /* <Route exact path="/descripcion/:peliculaId" component={DetallesHola} > <DetallesHola />
                 </Route>
@@ -25,6 +26,7 @@ export const Rutas = () => {
                 <Route path="/create-pelicula" component={CreatePelicula} />
                 <Route path="/pelicula-list" component={PeliculaList} />
                 <Route path="/Catalogo" component={Catalogo} />
+                <Route path="/funciones-list" component={Funciones} />
             </Switch>
         </Router>
     );

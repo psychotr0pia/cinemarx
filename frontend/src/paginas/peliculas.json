@@ -1,73 +1,212 @@
 [
     {
         "titulo": "Raya and the Last Dragon",
-        "director":"asdad",
+        "director":"Desconocido",
         "duracion":103,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people.",
+        "elenco":"Desconocido",
+        "calificacion": 5,
         "urlimagen": "/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg"
     },
     {
         "titulo": "Sentinelle",
-        "director":"asdad",
-        "duracion":103,
+        "director":"Desconocido",
+        "duracion":92,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"Transferred home after a traumatizing combat mission, a highly trained French soldier uses her lethal skills to hunt down the man who hurt her sister.",
+        "elenco":"Desconocido",
+        "calificacion": 6.1,
         "urlimagen": "/fFRq98cW9lTo6di2o4lK1qUAWaN.jpg"
     },
     {
         "titulo": "Zack Snyder's Justice League",
-        "director":"asdad",
-        "duracion":103,
+        "director":"Desconocido",
+        "duracion":113,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.",
+        "elenco":"Desconocido",
+        "calificacion": 5,
         "urlimagen": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg"
     },
     {
 
-        "titulo": "no se que poner",
-        "director":"asdad",
+        "titulo": "Tom & Jerry",
+        "director":"Desconocido",
         "duracion":103,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"Tom the cat and Jerry the mouse get kicked out of their home and relocate to a fancy New York hotel, where a scrappy employee named Kayla will lose her job if she can’t evict Jerry before a high-class wedding at the hotel. Her solution? Hiring Tom to get rid of the pesky mouse.",
+        "elenco":"Desconocido",
+        "calificacion":6,
         "urlimagen": "/6KErczPBROQty7QoIsaa6wJYXZi.jpg"
     },
     {
-        "titulo": "no se que poner 2",
-        "director":"asdad",
-        "duracion":103,
+        "titulo": "Monster Hunter",
+        "director":"Desconocido",
+        "duracion":83,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"A portal transports Cpt. Artemis and an elite unit of soldiers to a strange world where powerful monsters rule with deadly ferocity. Faced with relentless danger, the team encounters a mysterious hunter who may be their only hope to find a way home.",
+        "elenco":"Desconocido",
+        "calificacion": 5,
         "urlimagen": "/1UCOF11QCw8kcqvce8LKOO6pimh.jpg"
     },
     {
-        "titulo": "no se que poner 3",
-        "director":"asdad",
-        "duracion":103,
+        "titulo": "Bajocero",
+        "director":"Desconocido",
+        "duracion":105,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"When a prisoner transfer van is attacked, the cop in charge must fight those inside and outside while dealing with a silent foe: the icy temperatures.",
+        "elenco":"Desconocido",
+        "calificacion":4,
         "urlimagen": "/dWSnsAGTfc8U27bWsy2RfwZs0Bs.jpg"
     },
     {
-        "titulo": "no se que poner 4",
-        "director":"asdad",
-        "duracion":103,
+        "titulo": "Wonder Woman 1984",
+        "director":"Desconocido",
+        "duracion":92,
         "restriccion":false,
-        "sinopsis":"asdasdasad",
-        "elenco":"asdasdsad",
-        "calificacion":"asdasdasd",
+        "sinopsis":"A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.",
+        "elenco":"Desconocido",
+        "calificacion": 5,
         "urlimagen": "/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
+
+    },
+    {
+        "titulo": "승리호",
+        "director":"Desconocido",
+        "duracion":98,
+        "restriccion":false,
+        "sinopsis":"When the crew of a space junk collector ship called The Victory discovers a humanoid robot named Dorothy that's known to be a weapon of mass destruction, they get involved in a risky business deal which puts their lives at stake.",
+        "elenco":"Desconocido",
+        "calificacion": 4,
+        "urlimagen": "/qiUesQForGW872kIC0Crqx3vAr0.jpg"
+    },
+    {
+        "titulo": "Coming 2 America",
+        "director":"Desconocido",
+        "duracion":98,
+        "restriccion":false,
+        "sinopsis": "Prince Akeem Joffer is set to become King of Zamunda when he discovers he has a son he never knew about in America – a street savvy Queens native named Lavelle. Honoring his royal father's dying wish to groom this son as the crown prince, Akeem and Semmi set off to America once again.",
+        "elenco":"Desconocido",
+        "calificacion": 6,
+        "urlimagen": "/nWBPLkqNApY5pgrJFMiI9joSI30.jpg"
+    },
+    {
+        "titulo":"Outside the Wire" ,
+        "director":"Desconocido",
+        "duracion": 90,
+        "restriccion":false,
+        "sinopsis": "In the near future, a drone pilot is sent into a deadly militarized zone and must work with an android officer to locate a doomsday device.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/6XYLiMxHAaCsoyrVo38LBWMw2p8.jpg"
+    },
+    {
+        "titulo":"Cherry" ,
+        "director":"Desconocido",
+        "duracion": 101,
+        "restriccion":false,
+        "sinopsis": "Cherry drifts from college dropout to army medic in Iraq - anchored only by his true love, Emily. But after returning from the war with PTSD, his life spirals into drugs and crime as he struggles to find his place in the world.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/pwDvkDyaHEU9V7cApQhbcSJMG1w.jpg"
+    
+    },
+    {
+        "titulo": "Red Dot",
+        "director":"Desconocido",
+        "duracion": 85,
+        "restriccion":false,
+        "sinopsis": "On a hiking trip to rekindle their marriage, a couple find themselves fleeing for their lives in the unforgiving wilderness from an unknown shooter.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/xZ2KER2gOHbuHP2GJoODuXDSZCb.jpg"
+    },
+    {
+        "titulo":"Breach" ,
+        "director":"Desconocido",
+        "duracion": 100,
+        "restriccion":false,
+        "sinopsis": "A hardened mechanic must stay awake and maintain an interstellar ark fleeing the dying planet Earth with a few thousand lucky souls on board... the last of humanity. Unfortunately, humans are not the only passengers. A shapeshifting alien creature has taken residence, its only goal is to kill as many people as possible. The crew must think quickly to stop this menace before it destroys mankind.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/13B6onhL6FzSN2KaNeQeMML05pS.jpg"
+    
+    },
+    {
+        "titulo": "The Little Things",
+        "director":"Desconocido",
+        "duracion": 99,
+        "restriccion":false,
+        "sinopsis": "Deputy Sheriff Joe \"Deke\" Deacon joins forces with Sgt. Jim Baxter to search for a serial killer who's terrorizing Los Angeles. As they track the culprit, Baxter is unaware that the investigation is dredging up echoes of Deke's past, uncovering disturbing secrets that could threaten more than his case.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/c7VlGCCgM9GZivKSzBgzuOVxQn7.jpg"
+        
+    },
+    {
+        "titulo": "Godzilla vs. Kong",
+        "director":"Desconocido",
+        "duracion": 115,
+        "restriccion":false,
+        "sinopsis": "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen": "/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg"
+    },
+    {
+        "titulo":"Jiu Jitsu" ,
+        "director":"Desconocido",
+        "duracion": 92,
+        "restriccion":false,
+        "sinopsis":"Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a vicious race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the planet and mankind hangs in the balance." ,
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/eLT8Cu357VOwBVTitkmlDEg32Fs.jpg"
+    
+    },
+    {
+        "titulo": "Black Water: Abyss",
+        "director":"Desconocido",
+        "duracion": 100,
+        "restriccion":false,
+        "sinopsis": "An adventure-loving couple convince their friends to explore a remote, uncharted cave system in the forests of Northern Australia. With a tropical storm approaching, they abseil into the mouth of the cave, but when the caves start to flood, tensions rise as oxygen levels fall and the friends find themselves trapped. Unknown to them, the storm has also brought in a pack of dangerous and hungry crocodiles.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/95S6PinQIvVe4uJAd82a2iGZ0rA.jpg"
+    
+    },
+    {
+        "titulo":"Miraculous World: New York, United HeroeZ" ,
+        "director":"Desconocido",
+        "duracion": 85,
+        "restriccion":false,
+        "sinopsis": "During a school field trip, Ladybug and Cat Noir meet the American superheroes, whom they have to save from an akumatised super-villain. They discover that Miraculous exist in the United States too.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen": "/kIHgjAkuzvKBnmdstpBOo4AfZah.jpg"
+    
+    },
+    {
+        "titulo": "After We Collided",
+        "director":"Desconocido",
+        "duracion": 107,
+        "restriccion":false,
+        "sinopsis": "Tessa finds herself struggling with her complicated relationship with Hardin; she faces a dilemma that could change their lives forever.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/kiX7UYfOpYrMFSAGbI6j1pFkLzQ.jpg"
+    
+    },
+    {
+        "titulo": "Wrong Turn",
+        "director":"Desconocido",
+        "duracion": 101,
+        "restriccion":false,
+        "sinopsis": "Jen and a group of friends set out to hike the Appalachian Trail. Despite warnings to stick to the trail, the hikers stray off course—and cross into land inhabited by The Foundation, a hidden community of mountain dwellers who use deadly means to protect their way of life.",
+        "elenco":"Desconocido",
+        "calificacion":6,
+        "urlimagen":"/4U1SBHmwHkNA0eHZ2n1CuiC1K1g.jpg"
+    
     }
 ]

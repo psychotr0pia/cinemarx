@@ -1,2 +1,0 @@
-Debido a que sequelize usa TINYINT(1) para reporesentar booleano, se cambio el dataype de PELICULA.RESTRICCION a TINYINT(1)
-Cambios en models para representar mejor la base de datos
