@@ -2,14 +2,13 @@
 import React from "react";
 
 // Import Bootstrap
-import { Nav, Navbar, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Import Custom CSS
 import "./App.css";
 
 // Import from react-router-dom
-import style from "./Components/Catalogo.module.css"
+import style from "./Components/Catalogo/Catalogo.module.css"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // Import other React Component
@@ -17,8 +16,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 // import EditPelicula from "./Components/edit-pelicula.component"
-import PeliculaList from "./Components/pelicula-list.component"
-import { Movies } from "./Components/Catalogo-list.component"
+import { Movies } from "./Components/Catalogo/Catalogo-list.component"
 // App Component
 const App = () => {
   return (
@@ -27,18 +25,11 @@ const App = () => {
         to={"/Create-admin/"}>
         Admin
       </Link>
-        <h1 className={style.Titulo}>Catalogo</h1>
+      <h1 className={style.Titulo}>Catalogo</h1>
       <Movies />
     </div>
   );
 };
 
-export function Apps() {
-  return <div>
-    <header>
-      Movies
-    </header>
-  </div>
-}
-export default { App, Apps };
+export default { App };
 

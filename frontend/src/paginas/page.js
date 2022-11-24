@@ -1,4 +1,4 @@
-import { Movies } from "../Components/Catalogo-list.component";
+import { Movies } from "../Components/Catalogo/Catalogo-list.component";
 
 export function Page(){
     return <Movies/>

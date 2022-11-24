@@ -16,3 +16,4 @@ module.exports = app => {
 	//agregar rutas al servidor
 	app.use('/api/funciones', router);
 };
+// 

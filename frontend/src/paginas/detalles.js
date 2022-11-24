@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom"
 import style from "./detalles.module.css"
 import PeliculaService from "../Services/pelicula.service";
-import styles from "../Components/Catalogocard.module.css";
+import styles from "../Components/Catalogo/Catalogocard.module.css";
 
 export function DetallesHola(props) {
     const [peliculas, setpeliculas] = useState([]);

@@ -17,8 +17,7 @@ module.exports = (sequelize, Sequelize) => {
       COLUMNA: {
         type: Sequelize.STRING,
         allowNull: false
-      }
-
+      },
     });
     return Asiento;
   };

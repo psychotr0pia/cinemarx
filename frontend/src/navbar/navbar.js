@@ -16,29 +16,21 @@ export const Navbarr = () => {
                     </Navbar.Brand>
                     <Nav className="justify-content-end">
                         <Nav>
-                            <Link to={"/create-admin"}
-                                className="nav-link">
-                                Crear Admin
-                            </Link>
-                        </Nav>
-
-                        <Nav>
                             <Link to={"/admin-list"}
                                 className="nav-link">
-                                Lista Admins
+                                Lista de Admin
                             </Link>
                         </Nav>
-                        <Nav>
-                            <Link to={"/create-pelicula"}
-                                className="nav-link">
-                                Crear pelicula
-                            </Link>
-                        </Nav>
-
                         <Nav>
                             <Link to={"/pelicula-list"}
                                 className="nav-link">
-                                Lista Pelicula
+                                Lista de Pelicula
+                            </Link>
+                        </Nav>
+                        <Nav>
+                            <Link to={"/sala-list"}
+                                className="nav-link">
+                                Lista de Salas
                             </Link>
                         </Nav>
                     </Nav>
